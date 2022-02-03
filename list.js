@@ -29,12 +29,7 @@ function Project(title){
     projectTitle.textContent = title;
     document.querySelector('.projectContainer').appendChild(newProject);
     newProject.appendChild(projectTitle);
-    //add description
-    descriptionField = document.createElement('input');
-    descriptionField.classList.add('description');
-    newProject.appendChild(descriptionField);
-    var input = descriptionField.value;
-    console.log(input);
+
     //add Date
     const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     const today = new Date();

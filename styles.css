@@ -7,7 +7,7 @@
 }
 
 header{
-    height:5vh;
+    height:6vh;
     margin-top:0px;
     font-size:50px;
     color:white;
@@ -16,6 +16,7 @@ header{
 
 nav{
     display:inline-block;
+    position:fixed;
     width:15vw;
     height:95vh;
     background-color: grey;
@@ -23,10 +24,15 @@ nav{
 .main{
     text-align: center;
     display:inline-block;
-    margin-left:4vw;
+    margin-left:15vw;
 }
 #newProject{
-height:25px;
+    display:inline-block;
+    width:100%;
+    height:20px;
+}
+label{
+    display:inline-block;
 }
 .bar{
 
@@ -36,24 +42,23 @@ height:25px;
 }
 .projectContainer{
     display:grid;
-    grid-template-columns:17vw 17vw 17vw 17vw;
+    grid-template-columns:17vw;
     grid-template-rows:auto;
     gap:15px;
     
 }
 .project{
     background-color: white;
+    height:10vh;
+    width:70vw;
 }
 .projectTitle{
     font-size : 30px;
+    text-align:left;
 }
 .dateDiv{
     font-size:13px;
     text-align: right;
-}
-.description{
-    width:80%;
-    height:30%;
 }
 body{
     background-color: var(--body, darkgray);
@@ -70,19 +75,19 @@ body{
 }
 .completedContainer{
     display:none;
-    grid-template-columns:17vw 17vw 17vw 17vw;
+    grid-template-columns:17vw;
     grid-template-rows:auto;
     gap:15px;
     position:absolute;
-    width:75%;
-    height:80%;
+    width:100%;
+    min-height:10vh;
     background-color: yellowgreen;
 
 }
 p{
     display:none;
 }
-.expand{
-    height:50vh;
-    width:20vw;
+.completed{
+    height:10vh;
+    width:70vw;
 }
