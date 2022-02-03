@@ -20,8 +20,7 @@ function complete(id,date){
 function Project(title){
     //add title & own div
     this.title = title;
-    this.id = title;
-    ids.push(this.id);
+    ids.push(title);
     newProject = document.createElement('div');
     newProject.classList.add('project');
     newProject.id = title;
@@ -31,9 +30,11 @@ function Project(title){
     document.querySelector('.projectContainer').appendChild(newProject);
     newProject.appendChild(projectTitle);
     //add description
-    description = document.createElement('input');
-    description.classList.add('description');
-    newProject.appendChild(description);
+    descriptionField = document.createElement('input');
+    descriptionField.classList.add('description');
+    newProject.appendChild(descriptionField);
+    var input = descriptionField.value;
+    console.log(input);
     //add Date
     const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     const today = new Date();

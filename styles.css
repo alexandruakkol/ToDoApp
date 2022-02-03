@@ -79,3 +79,10 @@ body{
     background-color: yellowgreen;
 
 }
+p{
+    display:none;
+}
+.expand{
+    height:50vh;
+    width:20vw;
+}
