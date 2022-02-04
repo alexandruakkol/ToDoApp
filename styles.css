@@ -49,7 +49,7 @@ label{
 }
 .project{
     background-color: white;
-    height:10vh;
+    height:6vh;
     width:70vw;
 }
 .projectTitle{
@@ -88,6 +88,6 @@ p{
     display:none;
 }
 .completed{
-    height:10vh;
+    height:8vh;
     width:70vw;
 }
