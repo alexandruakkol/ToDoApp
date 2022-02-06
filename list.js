@@ -1,6 +1,7 @@
 var ids = [];
 var complCont = document.querySelector('.completedContainer');
 
+//build completed task
 function complete(id,date){
     let completeObj = document.createElement('div');
     completeObj.style = `id:${id}`;
@@ -14,7 +15,6 @@ function complete(id,date){
     dateDiv.classList.add('dateDiv');
     dateDiv.textContent = date;
     completeObj.appendChild(dateDiv);
-    return completeObj;
 }
 
 function Project(title){
