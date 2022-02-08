@@ -56,6 +56,11 @@ todoTab = document.querySelector('#todoTab');
 
 newBtn = document.querySelector('#NPButton');
 inputField = document.querySelector('#newProject');
+inputField.addEventListener('keyup', function(event){
+    if(event.keyCode === 13){
+        newBtn.click();
+    }
+});
 newBtn.addEventListener('click', function(){
     if(inputField.value){
         
