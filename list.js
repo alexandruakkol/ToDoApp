@@ -39,11 +39,13 @@ function Project(title){
     dateDiv.classList.add('dateDiv');
     dateDiv.textContent = this.date;
     newProject.appendChild(dateDiv);
+
     //add doubleclick for completion
     newProject.addEventListener('dblclick', function (){
         complete(this.id, this.querySelector('div').textContent);
         this.remove();
         ids.splice(ids.indexOf(this.id),1);
+        
     });
 }
 
@@ -61,6 +63,7 @@ inputField.addEventListener('keyup', function(event){
         newBtn.click();
     }
 });
+
 newBtn.addEventListener('click', function(){
     if(inputField.value){
         
@@ -71,8 +74,5 @@ newBtn.addEventListener('click', function(){
             if(isNaN(inputField.value.charAt(0))){
                 new Project(inputField.value);}
             else alert("Task cannot start with a number")}}
-      
-    
 
 });
-
