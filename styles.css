@@ -64,6 +64,9 @@ label{
     text-align:left;
 }
 .dateDiv{
+    position:relative;
+    bottom:10%;
+    right:1%;
     font-size:13px;
     text-align: right;
 }
